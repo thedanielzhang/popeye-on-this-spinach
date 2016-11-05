@@ -8,8 +8,8 @@
 
 
 	<body ng-app="News" ng-controller="MainCtrl">
-		<div>
-			{{test}}	
+		<div ng-repeat="post in posts | orderBy: '-upvotes'">
+			{{post.title}} - upvotes: {{post.upvotes}}
 		</div>
 	</body>
 
