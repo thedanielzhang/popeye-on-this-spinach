@@ -1,5 +1,15 @@
 var app = angular.module('News', []);
 
+app.factory('posts', [function(){
+	var o = {
+		posts: []
+	};
+
+	return o;
+
+
+}])
+
 app.controller('MainCtrl', [
 	'$scope',
 	'posts',
